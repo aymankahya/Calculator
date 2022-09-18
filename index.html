@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <div id="calculator-framework">
+            <div class="calculator top"></div>
+            <div class="calculator screen">
+                <div id="equation"></div>
+                <div id="result"></div>
+            </div>
+            <div class="calculator buttons">
+                <div id="entries">
+                    <div id="left">
+                        <button class="button clear">C</button>
+                        <button class="button special">√</button>
+                        <button class="button number">7</button>
+                        <button class="button number">4</button>
+                        <button class="button number">1</button>
+                        <button class="button number">.</button>
+                    </div>
+
+                    <div id="center">
+                        <button class="button special">(</button>
+                        <button class="button special">%</button>
+                        <button class="button number">8</button>
+                        <button class="button number">5</button>
+                        <button class="button number">2</button>
+                        <button class="button number">0</button>
+                    </div>
+
+                    <div id="right">
+                        <button class="button special">)</button>
+                        <button class="button special">±</button>                    
+                        <button class="button number">9</button>                    
+                        <button class="button number">6</button>                    
+                        <button class="button number">3</button>         
+                        <button class="button number delete">
+                            <img src="./images/clear.png" id="clear">
+                        </button>
+                    </div>   
+                    
+                </div>
+
+                <div id="operations">
+                    <button class="button operation">×</button>
+                    <button class="button operation">÷</button>
+                    <button class="button operation">−</button>
+                    <button class="button operation">+</button>
+                    <button class="button operation equal">=</button>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html, body{
+    height: 100%;
+    font-family: Montserrat;
+}
+
+body{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #5d6a72;
+}
+
+#calculator-framework{
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 430px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 17px 5px #b7b4b487;
+    border: 0px dashed red;
+}
+
+.calculator{
+    border: 0px dashed grey;
+    margin: 0 30px 0 30px;
+    padding: 0 5px 0 5px;
+}
+
+.calculator.top{
+    margin-top: 15px;
+    height: 25px;
+    letter-spacing: 1px;
+}
+
+.calculator.screen{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 40px;
+    height: 230px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+.calculator.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    height: 435px;
+}
+
+#equation,
+.calculator.top{
+    opacity: 50%;
+}
+
+#entries,
+#operations{
+    display: flex;
+    gap: 15px;
+}
+
+#left,
+#center,
+#right,
+#operations{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+
+.button{
+    height: 70px;
+    width: 80px;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+    font-family: Montserrat;
+    color: #5d6a72;
+    box-shadow: 3px 3px 5px 0px #7b7b7bc7;
+}
+
+.button:hover,
+.button.number:hover{
+    background-image: linear-gradient(rgba(77, 77, 77, 0.07) 0 0);
+}
+
+.button.equal{
+    height: 150px;
+}
+
+.button.number{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.button.clear{
+    background-color: #f5c769;
+    box-shadow: 3px 3px 5px 0px #e6c88c9a;
+    color: white;
+}
+
+.button.special{
+    background-color: #f6f0e4;
+    box-shadow: 3px 3px 5px 0px #e6d0ab;
+    color: #ab8636;
+}
+
+.button.operation{
+    background-color: #e1d5e9;
+    box-shadow: 3px 3px 5px 0px #4b007a60;
+    color: #4c007a;
+    font-size: 30px;
+}
+
+.button.equal{
+    background-color: #9640dd;
+    box-shadow: 3px 3px 5px 0px #4b007a60;
+    color: white;
+    font-size: 30px;
+}
+
+#clear{
+    height: 35px;
+    width: 35px;
+}
+
+.button.delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
