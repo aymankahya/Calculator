@@ -132,7 +132,7 @@ buttons.map( nodeChild => {
 
         case 'button operation equal':
             nodeChild.addEventListener('click' , function(){
-                displayResult(eval(userEquation.join("").toString()).toFixed(10));
+                displayResult(parseFloat(eval(userEquation.join("").toString()).toFixed(10)));
                 userInput = [];
                 userEquation = [];
                 powerOp = false;
