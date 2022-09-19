@@ -12,12 +12,12 @@ const months = ["Jan." , "Feb." , "Mar." , "Apr.", "May.","Jun.","Jul.","Aug.","
 
 const displayTime = function(){
   const fullDate = new Date();
-  const day = weekDays[fullDate.getUTCDay()-1];
-  const date = fullDate.getUTCDate();
-  const month = months[fullDate.getUTCMonth()-1];
-  const hour = fullDate.getUTCHours().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-  const minutes = fullDate.getUTCMinutes().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-  const secondes = fullDate.getUTCSeconds().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+  const day = weekDays[fullDate.getDay()-1];
+  const date = fullDate.getDate();
+  const month = months[fullDate.getMonth()-1];
+  const hour = fullDate.getHours().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+  const minutes = fullDate.getMinutes().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+  const secondes = fullDate.getSeconds().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
 
   timeDisplay.innerHTML = `${day} ${date} ${month} <span style="color:blue">${hour}:${minutes}:${secondes}</span>`;    
   
