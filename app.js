@@ -1,8 +1,3 @@
-//Create function for displaying the final result
-//Create function to display the user equation typing
-//Create function to get and display the time
-
-
 var userInput = [];
 var userEquation = [];
 const equationScreen = document.querySelector('#equation');
