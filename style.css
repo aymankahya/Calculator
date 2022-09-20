@@ -2,6 +2,8 @@
 html, body{
     height: 100%;
     font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
 }
 
 body{
@@ -11,6 +13,11 @@ body{
     align-items: center;
     overflow: hidden;
     color: #5d6a72;
+}
+
+#github-logo{
+    height: 20px;
+    width: 20px;
 }
 
 #calculator-framework{
@@ -30,6 +37,9 @@ body{
 }
 
 .calculator.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
     height: 25px;
 }
