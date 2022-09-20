@@ -4,6 +4,7 @@ html, body{
     font-family: Montserrat;
     display: flex;
     flex-direction: column;
+    
 }
 
 body{
@@ -23,7 +24,6 @@ body{
 #calculator-framework{
     display: flex;
     flex-direction: column;
-    height: 750px;
     width: 430px;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     border-radius: 30px;
@@ -59,6 +59,7 @@ body{
 
 .calculator.buttons{
     display: flex;
+    flex: 1 0 auto;
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 15px;

@@ -70,7 +70,8 @@ const delPercentage = function(){
     userEquation = userEquation.concat(targetNumber);
 }
 
-
+displayTime();
+setInterval(displayTime , 1000);
 
 // Create EventLister for each button
 
@@ -169,4 +170,4 @@ buttons.map( nodeChild => {
     };
 });
 
-setInterval(displayTime , 1000);
+
